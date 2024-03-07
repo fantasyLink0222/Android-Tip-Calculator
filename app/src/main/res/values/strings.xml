@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Android Tip Calculator</string>
     <string name="tip_calculator_heading">Calculate Tip</string>
+    <string name="generate_random_bill">Generate random bill</string>
     <string name="service_cost">Cost of Service</string>
+    <string name="ten_percent">10%</string>
+    <string name="fifteen_percent">15%</string>
+    <string name="eighteen_percent">18%</string>
+    <string name="twenty_percent">20%</string>
     <string name="tip_amount">Tip amount: %s</string>
+    <string name="bill_amount">Bill amount: %s</string>
+    <string name="total">Total: %s</string>
+
+
 </resources>
