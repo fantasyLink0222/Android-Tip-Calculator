@@ -68,7 +68,9 @@ fun TipCalculatorScreen() {
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
-        Button(onClick = {  serviceCostAmountInput= (1..999999).random().toString() })
+        Button(onClick = {  serviceCostAmountInput= (1..999999).random().toString() },
+                modifier = Modifier.align(Alignment.CenterHorizontally).padding(18.dp)
+        )
         {
             Text(stringResource(R.string.generate_random_bill))
             
@@ -100,23 +102,24 @@ fun TipCalculatorScreen() {
             }
         }
 
-        Text("Current Tip: $tipPercent%")
+        Text("Current Tip: $tipPercent%",
+            modifier = Modifier.padding(10.dp))
 
-        Spacer(Modifier.height(24.dp))
+        Spacer(Modifier.height(20.dp))
         Text(
             text = stringResource(R.string.bill_amount, amount),
             modifier = Modifier.align(Alignment.CenterHorizontally),
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
-        Spacer(Modifier.height(24.dp))
+        Spacer(Modifier.height(16.dp))
         Text(
             text = stringResource(R.string.tip_amount, tip),
             modifier = Modifier.align(Alignment.CenterHorizontally),
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
-        Spacer(Modifier.height(24.dp))
+        Spacer(Modifier.height(16.dp))
 
         Text(
             text = stringResource(R.string.total, total),
